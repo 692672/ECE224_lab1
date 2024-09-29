@@ -58,7 +58,7 @@ void doInterrupt() {
 	IOWR(STIMULUS_IN_BASE,2,0xFF); //unmasking
 	int AverageLatency, missed, multi;
 	int i;
-	for(i = 1; i <= 750; i+= 1){
+	for(i = 1; i <= 750; i+= 1){ //for(i = 1; i <= 2500; i+= 1)
 #ifdef EGM_NAME
 		configureEGM(i);
 		IOWR(EGM_BASE, 0, 1); // enabling EGM
