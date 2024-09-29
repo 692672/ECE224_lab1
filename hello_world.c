@@ -78,7 +78,7 @@ void doInterrupt() {
 
 void doTightPolling() {
 	int i, total, AverageLatency, missed, multi;
-	for (i = 1; i <= 750; i+= 1) {
+	for (i = 1; i <= 750; i+= 1) { //for(i = 1; i <= 2500; i+= 1)
 
 		#ifdef EGM_NAME
 			configureEGM(i);
